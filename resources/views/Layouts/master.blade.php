@@ -1,0 +1,5 @@
+@include('includes.links')
+@include('includes.header')
+@yield('content')
+@include('includes.footer')
+@include('includes.copyrights')
