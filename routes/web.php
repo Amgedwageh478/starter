@@ -57,3 +57,5 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('verified'
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/redirect/{service}','SocialController@redirect');
+Route::get('/callback/{service}','SocialController@callback');
